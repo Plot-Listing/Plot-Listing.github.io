@@ -351,7 +351,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 14px;
-  color: #fff;
+  color: #fff !important;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -991,7 +991,9 @@ Recent Listing
   border-top: 1px solid #eee;
 }
 
-.recent-listing .section-heading {
+.The goal is to modify the CSS to make the header visible on page load and ensure navigation text is visible.
+``````text
+recent-listing .section-heading {
   text-align: center;
   margin-bottom: 80px;
 }
@@ -2059,8 +2061,7 @@ responsive
   .main-banner ul.categories li a {
     color: transparent;
   }
-  .header-area .main-nav a.logo {
-    background-image: url(../images/black-logo.png);
+  .header-area .main-nav a.logo {    background-image: url(../images/black-logo.png);
     float: left;
   }
   .header-area .logo {
@@ -2072,4 +2073,35 @@ responsive
   .category-post .icon {
     transform: translateX(-22px);
   }
+}
+
+header {
+  background-color: rgba(35, 47, 62, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  height: 80px;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+header .main-nav .nav li a {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff !important;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  height: 40px;
+  line-height: 40px;
+  border: transparent;
+  letter-spacing: 1px;
 }
