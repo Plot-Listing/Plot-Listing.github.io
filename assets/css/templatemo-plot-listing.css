@@ -249,7 +249,7 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #1e1e1e!important;
+  color: #2a2a2a!important;
 }
 
 .background-header .main-nav .nav li:hover a {
@@ -582,8 +582,16 @@ header
   margin-top: 30px;
 }
 
+.header-area.header-sticky .nav li a {
+  color: #2a2a2a !important;
+}
+
 .header-area.header-sticky .nav li a.active {
-  color: #8d99af;
+  color: #8d99af !important;
+}
+
+.header-area.header-sticky .nav li a:hover {
+  color: #8d99af !important;
 }
 
 @media (max-width: 1200px) {
@@ -673,7 +681,7 @@ header
     padding: 0px !important;
     border: none !important;
     background: #f7f7f7 !important;
-    color: #191a20 !important;
+    color: #2a2a2a !important;
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
